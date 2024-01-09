@@ -1,10 +1,5 @@
-function getListStudentIds(arr){
-    
-    if (!Array.isArray(arr)) return []
-    
-    ids = []
-    arr.forEach((student)=>ids.push(student.id))
-    
+export default function getListStudentIds(arr) {
+  if (!Array.isArray(arr)) return [];
 
-    
-} 
+  return arr.map((student) => student.id);
+}
