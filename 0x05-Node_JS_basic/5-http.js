@@ -60,7 +60,7 @@ const app = http.createServer((req, res) => {
       })
       .catch((error) => {
         res.writeHead(500, { 'Content-Type': 'text/plain' });
-        res.end(`Internal Server Error: ${error.message}\n`);
+        res.end(`Internal Server Error: ${error.message}`);
       });
   } else {
     res.writeHead(404, { 'Content-Type': 'text/plain' });
